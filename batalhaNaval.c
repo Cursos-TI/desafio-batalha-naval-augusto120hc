@@ -36,5 +36,37 @@ int main() {
     // 1 1 1 1 1
     // 0 0 1 0 0
 
+    // DSAFIO NOVATO
+    int tabuleiro[10][10];
+
+    int i, j;
+
+    for(i = 0; i <  10; i++) {
+        for(j = 0; j < 10; j++) {
+            tabuleiro[i][j] = 0; // insere 0
+        }
+    printf("\n"); // pula para a proxima linha
+    }
+
+    //primeiro NAVIO
+    tabuleiro[4][2] = 3; // navio Horizontal
+    tabuleiro[4][3] = 3; 
+    tabuleiro[4][4] = 3; 
+
+    // sgundo NAVIO
+    tabuleiro[2][7] = 3; // navio vertical
+    tabuleiro[3][7] = 3; 
+    tabuleiro[4][7] = 3; 
+    tabuleiro[5][7] = 3;
+
+    for(i = 0; i < 10; i++) {
+        for(j = 0; j < 10; j++) {
+            printf("%d", tabuleiro[i][j]);
+        }
+        printf("\n");
+    }
+
+
+
     return 0;
 }
